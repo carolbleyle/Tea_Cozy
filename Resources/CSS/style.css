@@ -7,6 +7,8 @@ body {
   text-align: center;
 }
 
+/* Sytling for the header including navigation */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -36,6 +38,8 @@ nav span {
   padding: 10px;
 }
 
+/* Styling for Mission Statement secion */
+
 .mission {
   background-image: url("../Images/img-mission-background.jpg");
   width: 1200px;
@@ -52,24 +56,30 @@ nav span {
   width: 100%;
 }
 
+/* Styling for the Teas of the Month Section */
+
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 1000px;
   margin: 0 auto;
-  border: 1px solid white;
+}
+
+.content h4 {
+  margin-top: 5px;
 }
 
 .teas {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .teabox {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0px 15px;
 }
 
 .teabox img {
@@ -79,4 +89,33 @@ nav span {
 
 .teabox h4 {
   margin-top: 10px;
+}
+
+/* Styling for the Locations section */
+
+.location {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../Images/img-locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.location h2 {
+  margin-bottom: 15px;
+}
+
+.addresses {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.addresses .box {
+  width: 300px;
+  background-color: black;
+  margin: 15px 20px;
+  opacity: 1;
 }
