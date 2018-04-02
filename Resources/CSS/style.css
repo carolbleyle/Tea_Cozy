@@ -7,16 +7,21 @@ body {
   text-align: center;
 }
 
-/* Sytling for the header including navigation */
+/* Setting up flex boxes for header section */
+
+header, nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for the header including navigation */
 
 a {
   color: seashell;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 59px;
   border-bottom: 1px solid seashell;
   position: fixed;
@@ -31,9 +36,6 @@ header img {
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-right: 10px;
 }
 
@@ -69,12 +71,18 @@ nav span {
   margin-bottom: 12px;
 }
 
-/* Styling for the Teas of the Month Section*/
+/* Setting up boxes for Tea of the Month Section */
 
-.content {
+.content,
+.teabox {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* Styling for the Tea of the Month Section */
+
+.content {
   width: 1000px;
   margin: 60px auto;
 }
@@ -89,9 +97,6 @@ nav span {
 }
 
 .teabox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin: 0px 15px;
 }
 
@@ -104,17 +109,23 @@ nav span {
   margin-top: 10px;
 }
 
+/* Setting up boxes for Locations and footer Sections */
+
+.location,
+.addresses .box,
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 /* Styling for the Locations section */
 
 .location {
-  display: flex;
-  flex-direction: column;
   background-image: url("../Images/img-locations-background.jpg");
   height: 500px;
   width: 1200px;
   margin: 0 auto;
-  justify-content: center;
   padding-top: 50px;
 }
 
@@ -130,9 +141,6 @@ nav span {
 }
 
 .addresses .box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 300px;
   background-color: black;
   margin: 15px 20px;
@@ -148,9 +156,6 @@ nav span {
 /* Styling for the footer */
 
 .contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: 200px;
 }
 
