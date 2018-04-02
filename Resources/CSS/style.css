@@ -9,6 +9,10 @@ body {
 
 /* Sytling for the header including navigation */
 
+a {
+  color: seashell;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -52,22 +56,31 @@ nav span {
 
 .mission_text {
   background-color: black;
-  text-align: center;
   width: 100%;
 }
 
-/* Styling for the Teas of the Month Section */
+.mission h2 {
+  margin-top: 10px;
+  margin-bottom: 22px;
+}
+
+.mission h4 {
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+
+/* Styling for the Teas of the Month Section*/
 
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 1000px;
-  margin: 0 auto;
+  margin: 60px auto;
 }
 
 .content h4 {
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 .teas {
@@ -87,9 +100,10 @@ nav span {
   height: 200px;
 }
 
-.teabox h4 {
+.teas .teabox h4 {
   margin-top: 10px;
 }
+
 
 /* Styling for the Locations section */
 
@@ -101,6 +115,7 @@ nav span {
   width: 1200px;
   margin: 0 auto;
   justify-content: center;
+  padding-top: 50px;
 }
 
 .location h2 {
@@ -111,11 +126,39 @@ nav span {
   display: flex;
   justify-content: center;
   margin-top: 0px;
+  margin-bottom: 100px;
 }
 
 .addresses .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 300px;
   background-color: black;
   margin: 15px 20px;
   opacity: 1;
+}
+
+.box h3,
+.box p{
+  margin: 20px auto;
+}
+
+
+/* Styling for the footer */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+}
+
+.contact h2 {
+  margin: 10px auto;
+}
+
+.copywrite {
+  text-align: left;
+  margin-left: 20px;
 }
